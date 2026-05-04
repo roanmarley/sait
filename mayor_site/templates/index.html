@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ mayor.name }} - Офіційний портал</title>
+       <style>
+        /* Базовые настройки страницы */
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 3rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* --- ВАШ НОВЫЙ КОД ТУТ --- */
+
+        /* Оформление подзаголовка Мэр Киева */
+        .subtitle {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 5px 0 25px 0;
+        }
+
+        /* Контейнер для трех кнопок в ряд */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Стиль кнопок */
+        .btn-nav {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            min-width: 180px;
+        }
+
+        .btn-nav:hover {
+            background-color: #ffe066;
+            transform: translateY(-2px);
+        }
+
+        /* Размеры галереи */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .photo-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+            img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+        }
+
+.photo-card img {
+    width: 100%;
+    height: 280px !important; /* Увеличили с 200 до 280 */
+    object-fit: cover;
+    display: block;
+}
+
+.big-photo img {
+    height: 450px !important; /* Увеличили с 380 до 450 */
+}
+
+    </style>
+
+</head>
+
+<body>
+<header>
+    <h1>Голосуйте за Дмитрия Анатольевича!</h1>
+    <p class="subtitle">Мер Киева</p>
+
+    <!-- Контейнер для трех кнопок -->
+    <div class="nav-buttons">
+        <a href="#gallery-section" class="btn-nav">Посмотреть фотографии</a>
+        <a href="#future-section" class="btn-nav">Будущее</a>
+        <a href="#about-section" class="btn-nav">О деятельности</a>
+    </div>
+
+</header>
+
+<div id="why-him-section" style="padding: 80px 20px; background: #fdfdfd; margin: 40px auto; max-width: 1000px; border-radius: 15px; border: 1px solid #ddd; text-align: center;">
+    <h2 style="color: #0056b3; font-size: 2.2rem; margin-bottom: 20px;">Наведение порядка на Троещине</h2>
+
+    <p style="font-size: 1.3rem; color: #333; line-height: 1.8; max-width: 850px; margin: 0 auto;">
+        Дмитрий Анатольевич лично проинспектировал <b>Троещину</b> и взял ситуацию под контроль.
+        Дороги в ямах и горы мусора — этот беспорядок останется в прошлом.
+        <br><br>
+        Наша цель — навести чистоту и обеспечить безопасность на дорогах для каждого жителя массива.
+        <b>В кратчайшие сроки все ямы на мостах будут капитально залатаны, а дорожное покрытие —
+        приведено в надлежащий вид.</b> График вывоза мусора будет взят под жесткий
+        круглосуточный контроль. Мы не просто обещаем — мы начинаем генеральную
+        уборку нашего общего дома прямо сейчас!
+    </p>
+</div>
+
+
+
+
+
+<div id="future-section" style="padding: 60px 20px; background: white; margin: 40px auto; max-width: 1000px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;">
+    <h2 style="color: #0056b3; font-size: 2.2rem; margin-bottom: 20px;">Программа развития</h2>
+
+    <p style="font-size: 1.3rem; color: #333; line-height: 1.8; max-width: 850px; margin: 0 auto;">
+        В приоритете <b>Дмитрия Анатольевича</b> — ключевые инфраструктурные проекты:
+        строительство долгожданного метро на Троещину, капитальный ремонт дорожной сети
+        и оперативное завершение реконструкции мостов, находящихся в работе.
+    </p>
+</div>
+
+
+
+<div class="main-layout" style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: 20px auto; gap: 20px; padding: 0 20px;">
+
+
+</div>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голосуйте за Дмитрия Анатольевича</title>
+    <style>
+    html { scroll-behavior: smooth; }
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    header {
+        background-color: #0056b3;
+        color: white;
+        padding: 3rem 1rem;
+    }
+
+    /* Подзаголовок */
+    .subtitle {
+        font-size: 1.5rem;
+        color: #e0e0e0;
+        text-transform: uppercase;
+        margin: 10px 0 25px 0;
+    }
+
+    /* Кнопки в ряд */
+    .nav-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .btn-nav {
+        background-color: #ffcc00;
+        color: #333;
+        padding: 12px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        min-width: 180px;
+    }
+
+    /* ГАЛЕРЕЯ И ФОТО */
+    .container {
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+    }
+    .photo-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* РАЗМЕР ВЕРХНИХ ФОТО */
+    .photo-card img {
+        width: 100%;
+        height: 600px !important; /* Увеличили до 320px */
+        object-fit: cover;
+        display: block;
+    }
+
+    /* РАЗМЕР НИЖНЕГО ФОТО */
+    .big-photo {
+        grid-column: span 2;
+    }
+    .big-photo img {
+        height: 1500px !important; /* Вернули 500px для солидности */
+    }
+
+    .description { padding: 15px; font-weight: bold; }
+</style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <p style="font-size: 1.2rem; color: #555;">Сила, опыт, будущее.</p>
+
+        <div id="gallery-section" class="gallery">
+            <div class="photo-card">
+                <img src="static/1.jpg" alt="Фото 1">
+                <div class="description">На встрече с народом</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="static/2.jpg" alt="Фото 2">
+                <div class="description">В рабочем кабинете</div>
+            </div>
+
+
+            <div class="photo-card big-photo">
+                <img src="static/3.jpg" alt="Фото 3">
+                <div class="description">Важные решения</div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="about-section" style="padding: 60px 20px; background: white; margin: 40px auto; max-width: 1000px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;">
+    <h2 style="color: #333; font-size: 2rem; margin-bottom: 20px;">О деятельности</h2>
+    <p style="font-size: 1.1rem; color: #444; line-height: 1.6;">
+        Дмитрий Анатольевич — будущий мер, который превратит Киев в современный европейский мегаполис. Его работа сосредоточена на ключевых приоритетах: полной модернизации столицы, укреплении энергетической безопасности и прорыве в развитии инфраструктуры. Главная цель поставлена — метро на Троещину будет построено!
+
+
+    </p>
+</div>
+
+
+    <footer style="margin-top: 50px; color: #777;">
+        &copy; 2026  Предвыборный штаб Дмитрия Анатольевича
+    </footer>
+
+</body>
+</html>
