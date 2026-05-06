@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>    <meta charset="UTF-8">
+    <title>{{ mayor.name }} - Офіційний портал</title>
+       <style>
+        /* Базовые настройки страницы */
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 3rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* --- ВАШ НОВЫЙ КОД ТУТ --- */
+
+        /* Оформление подзаголовка Мэр Киева */
+        .subtitle {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 5px 0 25px 0;
+        }
+
+        /* Контейнер для трех кнопок в ряд */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Стиль кнопок */
+        .btn-nav {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            min-width: 180px;
+        }
+
+        .btn-nav:hover {
+            background-color: #ffe066;
+            transform: translateY(-2px);
+        }
+
+        .mobile-btn {
+    display: inline-block;
+    background-color: #ffd700; /* Желтый, как на твоем скриншоте */
+    color: #000;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+        /* Размеры галереи */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .photo-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+        }
+
+.photo-card img {
+    width: 100%;
+    height: 280px !important; /* Увеличили с 200 до 280 */
+    object-fit: cover;
+    display: block;
+}
+
+.big-photo img {
+    height: 450px !important; /* Увеличили с 380 до 450 */
+}
+
+    </style>
+
+</head>
+
+<body>
+<header>
+    <h1>Голосуйте за Дмитра Анатолійовича!</h1>
+    <p class="subtitle">Мер Киева</p>
+
+    <!-- Контейнер для трех кнопок -->
+    <div class="nav-buttons">
+        <a href="#gallery-section" class="btn-nav">Переглянути фотографії</a>
+        <a href="#about-section" class="btn-nav">Про діяльність</a>
+    </div>
+
+
+        <div class="nav-buttons">
+<a href="/mobile" class="mobile-btn" style="margin-top: 50px; display: inline-block;">Для телефонів</a>
+
+    </div>
+
+</a>
+
+</a>
+
+
+</header>
+
+<div id="why-him-section" style="padding: 80px 20px; background: #fdfdfd; margin: 40px auto; max-width: 1000px; border-radius: 15px; border: 1px solid #ddd; text-align: center;">
+    <h2 style="color: #0056b3; font-size: 2.2rem; margin-bottom: 20px;">Наведення ладу на Троєщині</h2>
+
+    <p style="font-size: 1.3rem; color: #333; line-height: 1.8; max-width: 850px; margin: 0 auto;">
+        Наведення ладу на Троєщині Дмитро Анатолійович особисто проінспектував Троєщину та взяв ситуацію під контроль. Дороги в ямах і гори сміття — це безлад залишиться в минулому. Наша мета – навести чистоту та забезпечити безпеку на дорогах для кожного мешканця масиву. У найкоротші терміни всі ями на мостах будуть капітально залатані, а дорожнє покриття приведено в належний вигляд. Графік вивезення сміття буде взято під жорсткий цілодобовий контроль. Ми не просто обіцяємо — ми починаємо генеральне прибирання нашого спільного будинку прямо зараз!
+        <!doctype html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+        <body>
+        
+        </body>
+        </html>
+    </p>
+</div>
+
+
+
+
+
+<div id="future-section" style="padding: 60px 20px; background: white; margin: 40px auto; max-width: 1000px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;">
+    <h2 style="color: #0056b3; font-size: 2.2rem; margin-bottom: 20px;">Програма розвитку
+</h2>
+
+    <p style="font-size: 1.3rem; color: #333; line-height: 1.8; max-width: 850px; margin: 0 auto;">
+        У пріоритеті Дмитра Анатолійовича – ключові інфраструктурні проекти: будівництво довгоочікуваного метро на Троєщину, капітальний ремонт дорожньої мережі та оперативне завершення реконструкції мостів, що перебувають у роботі.
+    </p>
+</div>
+
+
+
+<div class="main-layout" style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: 20px auto; gap: 20px; padding: 0 20px;">
+
+
+</div>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+   <!-- 1. Этот тег ОБЯЗАТЕЛЕН, чтобы телефон понимал масштаб -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    /* 2. Это правило сделает ВСЕ фото на сайте гибкими */
+    img {
+        max-width: 100%; /* Фото не будет шире экрана телефона */
+        height: auto;    /* Пропорции сохранятся, фото не сплющится */
+        display: block;  /* Убирает лишние зазоры */
+        margin: 0 auto;  /* Центрирует фото */
+    }
+
+    /* 3. Исправляем твою галерею, чтобы она подстраивалась под экран */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap; /* На телефоне фото встанут друг под друга */
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    /* Ограничиваем размер карточек, чтобы они не были гигантскими */
+    .photo-card {
+        width: 100%;
+        max-width: 400px; /* На ПК будет аккуратно, на телефоне — во всю ширину */
+    }
+
+    /* Твои стили шапки (теперь внутри тега style) */
+    header {
+        background-color: #0056b3;
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+</style>
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+    // Проверяем, зашел ли пользователь с мобильного устройства
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Замени ссылку ниже на адрес твоего сайта для телефонов
+        window.location.href = "mobile.html";
+    }
+</script>
+
+<script>
+    if (/Android|iPhone/i.test(navigator.userAgent)) {
+        window.location.href = "/mobile";
+    }
+</script>
+
+
+    <div class="container">
+        <p style="font-size: 1.2rem; color: #555;">Сила, досвід, майбутнє.</p>
+
+        <div id="gallery-section" class="gallery">
+            <div class="photo-card">
+                <img src="static/2.jpg" alt="Фото 2">
+                <div class="description">На зустрічі з народом</div>
+            </div>
+
+            <div class="photo-card">
+                <img src="static/1.jpg" alt="Фото 1">
+                <div class="description">У робочому кабінеті</div>
+            </div>
+
+
+            <div class="photo-card big-photo">
+                <img src="static/3.jpg" alt="Фото 3">
+                <div class="description">Важливі рішення</div>
+            </div>
+        </div>
+    </div>
+
+<div id="future-section" style="padding: 60px 20px; background: white; margin: 40px auto; max-width: 1000px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;">
+    <h2 style="color: #0056b3; font-size: 2.2rem; margin-bottom: 20px;">Новини
+</h2>
+
+    <p style="font-size: 1.3rem; color: #333; line-height: 1.8; max-width: 850px; margin: 0 auto;">
+        Будучи мером, Дмитро Анатолійович тримає депутатів під суворим контролем, успішно регулюючи протестну активність та фінансові питання.
+    </p>
+
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;">
+    <!-- Сама картинка -->
+<img src="static/4.jpg" style="width: 100%; max-width: 600px; border-radius: 12px;">
+
+   </div>
+
+
+</div>
+    <footer style="margin-top: 50px; color: #777;">
+        &copy; 2026  Передвиборний штаб Дмитра Анатолійовича
+    </footer>
+
+</body>
+</html>
