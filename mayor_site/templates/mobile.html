@@ -161,6 +161,28 @@ img {
     </div>
 </header>
 
+        <head>
+    <meta charset="UTF-8">
+    <title>Голосування</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #f0f2f5; padding-top: 50px; }
+        .card { background: white; padding: 30px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        #count { font-size: 40px; color: #007bff; display: block; margin-bottom: 20px; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 18px; }
+        button:disabled { background: #28a745; cursor: default; }
+    </style>
+
+    <div class="vote-block-container" style="text-align: center; margin-top: 100px;"> <div style="background-color: white; border-radius: 15px; padding: 15px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 140px;">
+        <span id="vote-count" style="font-size: 28px; font-weight: bold; color: #007bff; display: block; margin-bottom: 8px;">{{ votes }}</span>
+
+        <button id="voteBtn" onclick="makeVote()"
+                style="background-color: #28a745; color: white; border: none; padding: 6px 10px; border-radius: 5px; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 100%; transition: all 0.3s; font-size: 14px; font-weight: bold;">
+            <span id="voteIcon" style="margin-right: 5px;">👍</span>
+            <span id="voteText">Проголосувати</span>
+        </button>
+    </div>
+</div>
+
 <script>
     // Проверка: голосовал ли уже пользователь в этом браузере
     if (localStorage.getItem('voted')) {
