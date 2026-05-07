@@ -161,7 +161,41 @@ img {
     </div>
 </header>
 
+<script>
+    // Проверка: голосовал ли уже пользователь в этом браузере
+    if (localStorage.getItem('voted')) {
+        lockButton();
+    }
 
+    async function makeVote() {
+        const response = await fetch('/vote', { method: 'POST' });
+        const data = await response.json();
+
+        if (data.success) {
+            document.getElementById('vote-count').innerText = data.new_count;
+            localStorage.setItem('voted', 'true');
+            lockButton();
+        }
+    }
+
+    // Вспомогательная функция для смены состояния кнопки на "Голос учтен"
+    function lockButton() {
+        const btn = document.getElementById('voteBtn');
+        const icon = document.getElementById('voteIcon');
+        const text = document.getElementById('voteText');
+
+        icon.innerText = "✅";
+        text.innerText = "Голос враховано";
+
+        // Меняем цвет и отключаем
+        btn.disabled = true;
+        btn.style.backgroundColor = "#e0e0e0";
+        btn.style.color = "#888";
+        btn.style.cursor = "default";
+    }
+</script>
+
+    
 </div>
 
 </html>
